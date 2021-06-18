@@ -1,0 +1,3 @@
+models/Model.class
+controllers/Controller.class
+Database/DBConnect.class
