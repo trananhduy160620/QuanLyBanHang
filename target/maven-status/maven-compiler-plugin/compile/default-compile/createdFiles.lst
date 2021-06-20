@@ -1,3 +1,6 @@
-models/Model.class
-controllers/Controller.class
-Database/DBConnect.class
+com\controllers\HelloController.class
+com\controllers\HelloController1.class
+com\database\Connector.class
+com\controllers\HelloController2.class
+com\database\SanPhamDAO.class
+com\models\SanPham.class
