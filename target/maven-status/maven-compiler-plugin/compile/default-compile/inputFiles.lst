@@ -1,6 +1,3 @@
-C:\Users\Public\Documents\WabAppJava\QuanLyBanHang\src\main\java\com\controllers\HelloController1.java
-C:\Users\Public\Documents\WabAppJava\QuanLyBanHang\src\main\java\com\controllers\HelloController2.java
-C:\Users\Public\Documents\WabAppJava\QuanLyBanHang\src\main\java\com\database\SanPhamDAO.java
-C:\Users\Public\Documents\WabAppJava\QuanLyBanHang\src\main\java\com\database\Connector.java
-C:\Users\Public\Documents\WabAppJava\QuanLyBanHang\src\main\java\com\controllers\HelloController.java
-C:\Users\Public\Documents\WabAppJava\QuanLyBanHang\src\main\java\com\models\SanPham.java
+C:\Users\Public\Documents\WabAppJava\QuanLyBanHang\src\main\java\teamwork\com\models\SanPham.java
+C:\Users\Public\Documents\WabAppJava\QuanLyBanHang\src\main\java\teamwork\com\controllers\SanPhamController.java
+C:\Users\Public\Documents\WabAppJava\QuanLyBanHang\src\main\java\teamwork\com\dao\SanPhamDAO.java
