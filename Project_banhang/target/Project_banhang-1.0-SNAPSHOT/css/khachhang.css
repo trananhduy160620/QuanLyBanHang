@@ -1,0 +1,185 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 3 Jul 2021, 14:40:23
+    Author     : PC
+*/
+::-webkit-input-placeholder { /* Edge */
+    padding-left: 15px;
+    color: rgba(255,255,255,0.5) !important;
+}
+:-ms-input-placeholder { /* Internet Explorer */
+    padding-left: 15px;
+    color: rgba(255,255,255,0.5) !important;
+}
+::placeholder {
+    padding-left: 15px;
+    color: rgba(255,255,255,0.5) !important;
+}
+body {
+    background: #1E1E2E;
+}
+.title-header {
+    width: 100%;
+    height: 50px;
+    font-size: 25px;
+    color: #ff7506;
+    margin-top: 40px;
+}
+.form-search-customer form {
+    display: flex;
+}
+.form-search-customer input[type=text] {
+    width: 80%;
+    height: 40px;
+    color: #fff;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: 2px solid #ff7506;
+    border-right: none; 
+    padding-left: 15px;
+    background: transparent;
+}
+
+.form-search-customer input[type=submit] {
+    width: 20%;
+    height: 40px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 2px solid #ff7506;
+    background: #1E1E2E;
+    color: #fff;
+}
+
+.form-search-customer .btn-add {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.form-search-customer .btn-add a {
+    display: block;
+    width: 80%;
+    height: 40px;
+    border-radius: 20px;
+    border: 2px solid #ff7506;
+    text-decoration: none;
+    line-height: 33px;
+    text-align: center;
+    background: #1E1E2E;
+    color: #fff;
+}
+
+.list-customer {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.list-customer tr th {
+    height: 50px;
+    background: #ff7506;
+    color: #fff;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.list-customer tr th:first-child {
+    border-top-left-radius: 10px;
+}
+
+.list-customer tr th:last-child {
+    border-top-right-radius: 10px;
+}
+
+.list-customer tr td {
+    height: 40px;
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    text-align: center;
+    margin-top: 2px;
+    border-bottom: 1px solid #fff;
+}
+
+.list-customer tr:nth-child(2n+3) {
+    background: #2C2C4B;
+}
+
+.list-customer tr:last-child {
+    border-bottom-left-radius: 10px;
+}
+.custom-customer {
+    width: 80%;
+    margin: 30px auto 0;
+}
+.custom-customer form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.custom-customer .item-input {
+    width: 49%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.custom-customer .item-input label {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.custom-customer .item-input input {
+    width: 100%;
+    height: 40px;
+    padding-left: 15px;
+    border: 1px solid #fff;
+    background: transparent;
+    border-radius: 5px;
+    margin-top: 5px;
+    color: #fff;
+}
+.custom-customer .item-input input:focus, .add-customer .item-input input:hover {
+    border-color: #ff7506; 
+}
+.custom-customer .btn-submit, .btn-return {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.custom-customer .btn-submit input {
+    font-size: 20px;
+    color: #fff;
+    width: 140px;
+    min-width: 140px;
+    height: 40px;
+    background: #ff7506;
+    border-radius: 40px;
+    text-align: center;
+    line-height: 40px;
+    border: none;
+}
+.custom-customer .btn-submit a, .btn-return a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    width: 140px;
+    min-width: 140px;
+    height: 40px;
+    background: #AFAEAE;
+    border-radius: 40px;
+    text-align: center;
+    line-height: 40px;
+    border: none;
+    margin-left: 15px;
+}
+
+.btn-return a {
+    margin-top: 40px;
+}
+

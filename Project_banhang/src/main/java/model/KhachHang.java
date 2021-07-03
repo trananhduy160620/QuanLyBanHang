@@ -12,7 +12,7 @@ import java.io.Serializable;
  * @author ADMIN
  */
 public class KhachHang implements Serializable {
-    private String makh;
+    private int makh;
     private String tenkh;
     private String diachi;
     private String sodienthoai;
@@ -22,7 +22,7 @@ public class KhachHang implements Serializable {
     public KhachHang() {
     }
 
-    public KhachHang(String makh, String tenkh, String diachi, String sodienthoai, int sodu, int congno) {
+    public KhachHang(int makh, String tenkh, String diachi, String sodienthoai, int sodu, int congno) {
         this.makh = makh;
         this.tenkh = tenkh;
         this.diachi = diachi;
@@ -31,11 +31,11 @@ public class KhachHang implements Serializable {
         this.congno = congno;
     }
 
-    public String getMakh() {
+    public int getMakh() {
         return makh;
     }
 
-    public void setMakh(String makh) {
+    public void setMakh(int makh) {
         this.makh = makh;
     }
 

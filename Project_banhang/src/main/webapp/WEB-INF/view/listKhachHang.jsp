@@ -13,26 +13,44 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Danh sach khách hàng</h1>
-        <table border="1" cellspacing="0" cellpadding="0">
-            <th>MaKhachhang</th>
-            <th>TenKhachhang</th>
-            <th>DiaChi</th>
-            <th>SDT</th>
-            <th>SoDu</th>
-            <th>CongNo</th>
+        <div class="container">
+            <jsp:include page="manageKhachHang.jsp"></jsp:include>
+        
+            <div class="form-search-customer">
+                <div class="row">
+                    <div class="offset-5 col-5">
+                        <form action="./search.html" method="POST">
+                            <input type="text" name="tenkh" value="${nv.tenkh}" placeholder="Nhập tên khách hàng"/>
+                            <input type="submit" value="Tìm kiếm"/>
+                        </form>
+                    </div>
+                    <div class="col-2 btn-add">
+                        <a href="./add.html">Thêm khách hàng</a>
+                    </div>
+                </div>
+            </div>
+            <table class="list-customer">
+                <th>Tên khách hàng</th>
+                <th>Địa chỉ</th>
+                <th>Điện thoại</th>
+                <th>Số dư</th>
+                <th>Công nợ</th>
+                <th>Cập nhật</th>
+                <th>Xóa</th>
 
-            <c:forEach var="kh" items="${list}">
-                <tr>
-                    <td> ${kh.makh} </td>
-                    <td> ${kh.tenkh} </td>
-                    <td> ${kh.diachi} </td>
-                    <td> ${kh.sodienthoai} </td>
-                    <td> ${kh.sodu} </td>
-                    <td> ${kh.congno} </td>
-                </tr>
-            </c:forEach>
-        </table>
+                <c:forEach var="kh" items="${list}">
+                    <tr>
+                        <td> ${kh.tenkh} </td>
+                        <td> ${kh.diachi} </td>
+                        <td> ${kh.sodienthoai} </td>
+                        <td> ${kh.sodu} </td>
+                        <td> ${kh.congno} </td>
+                        <td><a href="./edit.html?makh=${kh.makh}">Edit</a></td>
+                        <td><a href="./delete.html?makh=${kh.makh}" onclick="return confirm('Ban co chac chan muon xoa khach hang?')">Delete</a> </td>
+                    </tr>
+                </c:forEach>
+            </table>
+        </div>
     </body>
 </html>
 
