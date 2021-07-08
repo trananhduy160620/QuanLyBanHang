@@ -41,10 +41,12 @@
                 <label for="ngaythu">Ngày thu <label />
                 <input type="text" id="ngaythu" name="ngaythu"/>
                 <br>
-                
-                
                 <input type="submit" value="Thêm phiếu thu"/>
             </form>
+            <br>
+            <button>
+                <a style="text-decoration:none" href="/QuanLyBanHang/viewphieuthu">Quay lại danh sách phiếu thu</a>
+            </button>
         </div>
     </body>
 </html>

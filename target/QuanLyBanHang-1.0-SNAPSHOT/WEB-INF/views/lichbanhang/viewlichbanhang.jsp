@@ -39,7 +39,10 @@
                     }
                 %> 
             </table>  
-            <a href="/QuanLyBanHang/index.jsp">Quay lại trang chủ</a>
+            <br>
+            <button>
+                <a style="text-decoration:none" href="/QuanLyBanHang/index.jsp">Quay lại trang chủ</a>
+            </button>
         </div>
     </body>
 </html>

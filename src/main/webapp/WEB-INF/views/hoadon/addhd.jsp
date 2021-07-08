@@ -17,6 +17,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Thêm hóa đơn</title>
     </head>
+
     <body>
         <div align="center">
             <h1>Danh sách sản phẩm</h1>  
@@ -51,8 +52,10 @@
                 <br>
                 <input type="submit" value="Lập hóa đơn" />
             <form>
-             <br>
-            <a href="/QuanLyBanHang/index.jsp">Quay lại trang chủ</a>
+            <br>
+            <button>
+                <a style="text-decoration:none" href="/QuanLyBanHang/viewhoadon">Quay lại danh sách hóa đơn</a>
+            </button>
         </div>
     </body>
 </html>

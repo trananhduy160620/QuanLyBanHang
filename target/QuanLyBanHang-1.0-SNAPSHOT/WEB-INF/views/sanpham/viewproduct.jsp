@@ -49,8 +49,11 @@
                         out.print("</tr>");
                     }
                 %> 
-            </table>  
-            <a href="/QuanLyBanHang/index.jsp">Quay lại trang chủ</a>
+            </table>
+            <br>
+            <button>
+                <a style="text-decoration:none" href="/QuanLyBanHang/index.jsp">Quay lại trang chủ</a>
+            </button>
         </div>
     </body>
 </html>

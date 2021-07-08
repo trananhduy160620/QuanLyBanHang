@@ -42,6 +42,10 @@
                 <br>
                 <input type="submit" value="Thêm khách hàng"/>
             </form>
+            <br>
+            <button>
+                <a style="text-decoration:none" href="/QuanLyBanHang/viewuser">Quay lại danh sách khách hàng</a>
+            </button>
         </div>
     </body>
 </html>

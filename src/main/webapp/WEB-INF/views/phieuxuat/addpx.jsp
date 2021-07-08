@@ -50,10 +50,12 @@
                 <label for="ngayxuat"> Ngày xuất <label />
                 <input type="text" id="ngayxuat" name="ngayxuat"/>
                 <br>
-                
-                
                 <input type="submit" value="Thêm phiếu xuất"/>
             </form>
+            <br>
+            <button>
+                <a style="text-decoration:none" href="/QuanLyBanHang/viewphieuxuat">Quay lại danh sách phiếu xuất</a>
+            </button>
         </div>
     </body>
 </html>

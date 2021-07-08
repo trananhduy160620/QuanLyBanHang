@@ -34,6 +34,10 @@
                 <br>
                 <input type="submit" value="Cập nhật sản phẩm"/>
             </form>
+            <br>
+            <button>
+                <a style="text-decoration:none" href="/QuanLyBanHang/viewproduct">Quay lại danh sách sản phẩm</a>
+            </button>
         </div>
     </body>
 </html>

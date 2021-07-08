@@ -44,8 +44,11 @@
                         out.print("</tr>");
                     }
                 %> 
-            </table>  
-            <a href="/QuanLyBanHang/viewproduct"> Quay lại danh sách sản phẩm </a>
+            </table>
+            <br>
+            <button>
+                <a style="text-decoration:none" href="/QuanLyBanHang/viewproduct">Quay lại danh sách sản phẩm</a>
+            </button>
         </div>
     </body>
 </html>

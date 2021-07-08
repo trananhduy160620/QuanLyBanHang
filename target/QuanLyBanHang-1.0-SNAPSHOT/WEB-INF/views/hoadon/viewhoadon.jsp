@@ -17,6 +17,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Hóa đơn</title>
     </head>
+    
     <body>
         <div align="center">
             <h1>Danh sách các hóa đơn</h1>  
@@ -46,7 +47,10 @@
                     }
                 %> 
             </table>  
-            <a href="/QuanLyBanHang/index.jsp">Quay lại trang chủ</a>
+            <br>
+            <button>
+                <a style="text-decoration:none" href="/QuanLyBanHang/index.jsp">Quay lại trang chủ</a>
+            </button>
         </div>
     </body>
 </html>
