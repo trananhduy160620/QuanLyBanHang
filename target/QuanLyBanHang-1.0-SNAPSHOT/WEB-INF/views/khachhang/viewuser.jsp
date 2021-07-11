@@ -16,24 +16,29 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Khách hàng</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+              rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+              crossorigin="anonymous">
     </head>
     <body>
-        <div align="center">
+        <div class="container" width="70%" align="center">
             <h1>Danh sách khách hàng</h1>  
             <form action="/QuanLyBanHang/viewuser" method="POST">
                 <input type="text" name="makh" placeholder="Nhập mã khách hàng"/>
                 <input type="submit" value="Tìm kiếm" />
-            <form>
-            <table border="2" width="100%" >  
+            </form>
+            <table class="table table-bordered" width="100%" >  
                 <tr>
-                    <th>Mã khách hàng</th>
-                    <th>Tên khách hàng</th>
-                    <th>Địa chỉ</th>
-                    <th>SĐT</th>
-                    <th>Số dư</th>
-                    <th>Công nợ</th>
+                    <th scope="col">Mã khách hàng</th>
+                    <th scope="col">Tên khách hàng</th>
+                    <th scope="col">Địa chỉ</th>
+                    <th scope="col">SĐT</th>
+                    <th scope="col">Số dư</th>
+                    <th scope="col">Công nợ</th>
                     <th colspan="2">
-                        <a href="addkh"> Thêm khách hàng </a>
+                        <button>
+                        <a style="text-decoration:none" href="addkh"> Thêm khách hàng </a>
+                        </button>
                     </th>
                 </tr>
                 <%
