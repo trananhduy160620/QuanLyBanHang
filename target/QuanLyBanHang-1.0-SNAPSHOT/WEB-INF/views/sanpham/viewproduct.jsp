@@ -73,7 +73,7 @@
                         out.print("<td>" + list.get(i).getQuycach() + "</td>");
                         out.print("<td>" + list.get(i).getGiaSanPham() + "</td>" + "<br>");
                         out.print("<td> <a href='updatesp/" + list.get(i).getMaSanPham() + "'> Sửa" + "</a> </td>");
-                        out.print("<td> <a href='deletesp/" + list.get(i).getMaSanPham() + "'> Xóa" + "</a> </td>");
+                        out.print("<td> <a style='color: red' href='deletesp/" + list.get(i).getMaSanPham() + "'> Xóa" + "</a> </td>");
                         out.print("</tr>");
                     }
                 %> 

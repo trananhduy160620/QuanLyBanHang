@@ -39,7 +39,6 @@
                 </tr>
                 <%
                     ArrayList<HoaDon> list = (ArrayList<HoaDon>) request.getAttribute("list");
-                    
                     for (int i = 0; i < list.size(); i++) {
                         out.print("<tr>");
                         out.print("<td>" + list.get(i).getMaHoaDon()+ "</td>");

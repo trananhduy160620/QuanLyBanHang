@@ -80,7 +80,7 @@
                         out.print("<td>" + list.get(i).getSodu() + "</td>");
                         out.print("<td>" + list.get(i).getCongno() + "</td>");
                         out.print("<td> <a href='updatekh/" + list.get(i).getMaKhachHang() + "'> Sửa" + "</a> </td>");
-                        out.print("<td> <a href='deletekh/" + list.get(i).getMaKhachHang() + "'> Xóa" + "</a> </td>");
+                        out.print("<td> <a style='color: red' href='deletekh/" + list.get(i).getMaKhachHang() + "'> Xóa" + "</a> </td>");
                         out.print("</tr>");
                     }
                 %> 

@@ -25,8 +25,7 @@
                 font-weight: bold;
             }
 
-            .container{
-                background-color: bisque;
+            .container{         
                 text-align: center;
                 padding: 50px;
             }

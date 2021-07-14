@@ -20,7 +20,6 @@
             }
 
             .container{
-                background-color: bisque;
                 text-align: center;
                 padding: 50px;
             }
