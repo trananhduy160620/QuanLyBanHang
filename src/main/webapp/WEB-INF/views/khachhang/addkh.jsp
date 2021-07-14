@@ -13,6 +13,33 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
               rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
               crossorigin="anonymous">
+        <style>
+            h1{
+                text-align: center;
+                font-weight: bold;
+            }
+
+            .container{
+                background-color: bisque;
+                text-align: center;
+                padding: 50px;
+            }
+
+            label{
+                text-transform: uppercase;
+                text-align: right;
+            }   
+
+            input{
+                margin: 5px;
+            }
+
+            .btnThem{
+                padding-top: 50px;
+                padding-bottom: 10px;
+                text-align: center;
+            }
+        </style>
     </head>
     <body> 
         <h1>Thêm khách hàng</h1>  
@@ -41,9 +68,9 @@
 
                 <div class="form-group row">
                     <label class="col-sm-4 col-form-label" for="sdt">SĐT </label>
-                        <div class="col-sm-5">
-                            <input class="form-control" type="text" id="sdt" name="sdt"/>
-                        </div>
+                    <div class="col-sm-5">
+                        <input class="form-control" type="text" id="sdt" name="sdt"/>
+                    </div>
                 </div>
 
                 <div class="form-group row">
@@ -55,46 +82,19 @@
 
                 <div class="form-group row">
                     <label class="col-sm-4 col-form-label" for="congno">Công nợ </label>
-                        <div class="col-sm-5">
-                            <input class="form-control" type="text" id="congno" name="congno" value="0"/>
-                        </div>
+                    <div class="col-sm-5">
+                        <input class="form-control" type="text" id="congno" name="congno" value="0"/>
+                    </div>
                 </div>
                 <div class="btnThem">
-                    <input type="submit" value="Thêm khách hàng"/>
+                    <input class="btn btn-primary" type="submit" value="Thêm khách hàng"/>
                 </div>
             </form>
 
-            <button>
-                <a style="text-decoration:none" href="/QuanLyBanHang/viewuser">Quay lại danh sách khách hàng</a>
+            <button class="btn btn-danger">
+                <a style="text-decoration:none; color:white" href="/QuanLyBanHang/viewuser">Quay lại danh sách khách hàng</a>
             </button>
         </div>
     </body>
 </html>
 
-<style>
-    h1{
-        text-align: center;
-        font-weight: bold;
-    }
-    
-    .container{
-        background-color: bisque;
-        text-align: center;
-        padding: 50px;
-    }
-
-    label{
-        text-transform: uppercase;
-        text-align: right;
-    }   
-
-    input{
-        margin: 5px;
-    }
-
-    .btnThem{
-        padding-top: 50px;
-        padding-bottom: 10px;
-        text-align: center;
-    }
-</style>

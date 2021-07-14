@@ -15,25 +15,43 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Phiếu thu</title>
+        <title>Quản lý phiếu thu</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+              rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+              crossorigin="anonymous">
+        <style> 
+            th{
+                text-align: center;
+            }
+
+            label{
+                margin: auto;
+            }
+
+            th,tr{
+                vertical-align: middle;
+            }
+        </style>
     </head>
     <body>
-        <div align="center">
+        <div class="container" width="70%" align="center">
             <h1>Danh sách phiếu thu</h1>
-            <table border="2" width="70%" >  
+            
+            <button style="float:left" class="btn btn-success">
+                <a style="text-decoration:none; color: white" href="addpt"> Thêm phiếu thu </a>
+            </button>
+            
+            <table class="table table-bordered" width="100%" >  
                 <tr>
                     <th>Mã phiếu thu</th>
                     <th>Mã khách hàng</th>
                     <th>Tên khách hàng</th>
                     <th>Số tiền thu</th>
                     <th>Ngày thu</th>
-                    <th colspan="2">
-                        <a href="addpt"> Thêm phiếu thu </a>
-                    </th>
                 </tr>
                 <%
                     ArrayList<PhieuThu> listPT = (ArrayList<PhieuThu>) request.getAttribute("listPT");
-                    
+
                     for (int i = 0; i < listPT.size(); i++) {
                         out.print("<tr>");
                         out.print("<td>" + listPT.get(i).getMaPhieuThu() + "</td>");
@@ -45,9 +63,8 @@
                     }
                 %> 
             </table>  
-            <br>
-            <button>
-                <a style="text-decoration:none" href="/QuanLyBanHang/index.jsp">Quay lại trang chủ</a>
+            <button class="btn btn-danger">
+                <a style="text-decoration:none; color: white;" href="/QuanLyBanHang/index.jsp">Quay lại trang chủ</a>
             </button>
         </div>
     </body>

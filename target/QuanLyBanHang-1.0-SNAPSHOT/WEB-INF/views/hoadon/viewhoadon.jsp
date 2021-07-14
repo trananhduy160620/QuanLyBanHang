@@ -15,23 +15,27 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Hóa đơn</title>
+        <title>Quản lý hóa đơn</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+              rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+              crossorigin="anonymous">
     </head>
     
     <body>
-        <div align="center">
-            <h1>Danh sách các hóa đơn</h1>  
+        <div class="container" width="100%" align="center">
+            <h1>Danh sách các hóa đơn</h1>    
             
-            <table border="2" width="70%" >  
+            <button style="float:left" class="btn btn-success">
+                <a style="text-decoration:none; color: white" href="addhd"> Thêm hóa đơn </a>
+            </button>
+
+            <table class="table table-bordered" width="70%" >  
                 <tr>
                     <th>Mã hóa đơn</th>
                     <th>Mã sản phẩm</th>
                     <th>Số lượng</th>
                     <th>Giá bán</th>
                     <th>Khuyến mại</th>
-                    <th colspan="3">
-                        <a href="addhd"> Thêm hóa đơn </a>
-                    </th>
                 </tr>
                 <%
                     ArrayList<HoaDon> list = (ArrayList<HoaDon>) request.getAttribute("list");
@@ -48,9 +52,23 @@
                 %> 
             </table>  
             <br>
-            <button>
-                <a style="text-decoration:none" href="/QuanLyBanHang/index.jsp">Quay lại trang chủ</a>
+            <button class="btn btn-danger">
+                <a style="text-decoration:none; color: white;" href="/QuanLyBanHang/index.jsp">Quay lại trang chủ</a>
             </button>
         </div>
     </body>
 </html>
+
+<style> 
+    th{
+        text-align: center;
+    }
+    
+    label{
+        margin: auto;
+    }
+    
+    th,tr{
+        vertical-align: middle;
+    }
+</style>

@@ -15,27 +15,55 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Sản phẩm</title>
+        <title>Quản lý sản phẩm</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+              rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+              crossorigin="anonymous">
+        <style>
+            .search{
+                width: 400px;
+                float:right;
+            }
+            
+            p{
+                text-align: left;
+            }
+            
+            th{
+                text-align: center;
+            }
+        </style>
     </head>
     <body>
-        <div align="center">
+        <div class="container" width="100%" align="center">
             <h1>Danh sách sản phẩm</h1>  
-            <form action="/QuanLyBanHang/viewproduct" method="POST">
-                <input type="text" name="masp" placeholder="Nhập mã sản phẩm"/>
-                <input type="submit" value="Tìm kiếm" />
-            <form>
-            <table border="2" width="70%" >  
+            <div class="search">
+                <form  action="/QuanLyBanHang/viewproduct" method="POST"> 
+                    <div class="form-group row" >
+                        <div class="col-sm-7">
+                            <input class="form-control" type="text" name="masp" placeholder="Nhập mã sản phẩm"/>
+                        </div>
+                        <div class="col-sm-5" >
+                            <input class="btn btn-info" type="submit" value="Tìm kiếm" />
+                        </div>           
+                    </div> 
+                </form>
+            </div>
+            
+            <button style="float:left" class="btn btn-success">
+                <a style="text-decoration:none; color: white" href="addsp"> Thêm sản phẩm </a>
+            </button>
+            <br>
+            <br>
+            <table class="table table-bordered" width="70%" >  
                 <tr>
                     <th>Mã sản phẩm</th>
                     <th>Tên sản phẩm</th>
                     <th>Quy cách (kg)</th>
                     <th>Giá gốc (ĐV: 1000Đ)</th>
-                    <th colspan="2">
-                        <a href="addsp"> Thêm sản phẩm </a>
-                    </th>
+                    <th colspan="2">Thay đổi</th>
                 </tr>
                 <%
-                    
                     ArrayList<SanPham> list = (ArrayList<SanPham>) request.getAttribute("list");
                     out.print("<p> Số lượng sản phẩm: " + list.size() + "</p>");
                     for (int i = 0; i < list.size(); i++) {
@@ -50,9 +78,9 @@
                     }
                 %> 
             </table>
-            <br>
-            <button>
-                <a style="text-decoration:none" href="/QuanLyBanHang/index.jsp">Quay lại trang chủ</a>
+
+            <button class="btn btn-danger">
+                <a style="text-decoration:none; color: white;" href="/QuanLyBanHang/index.jsp">Quay lại trang chủ</a>
             </button>
         </div>
     </body>
